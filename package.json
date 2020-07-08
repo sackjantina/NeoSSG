@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./src/index.js",
-    "clean": "rm ./live/*"
+    "clean": "node ./src/clean.js"
   },
   "author": "",
   "license": "ISC",
