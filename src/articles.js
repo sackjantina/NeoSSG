@@ -1,6 +1,7 @@
 const config = require("./config");
 const fs = require("fs");
 const navbar = require("./navbar");
+const footer = require("./footer");
 
 const homepage = posts =>
 `<!DOCTYPE html>
@@ -32,9 +33,8 @@ const homepage = posts =>
         </div>
     </div>
 
-    <footer>
-    	${`<p>© ${new Date().getFullYear()} ${config.siteAuthor}</p>`}
-    </footer>
+    ${footer}
+
 </body>
 </html>
 `;
